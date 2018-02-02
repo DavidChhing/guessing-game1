@@ -4,14 +4,20 @@
             <script type="text/javascript">
                 var username = prompt ("What is your name?:")
                     alert("welcome to my site " + username);
-                        console.log("Visitors name"+ username);
-                    var wanttoplay = ("welcome to my site "+ username+ "\n\n\n\n Do you want to play my guessing game?")    
-                        console.log("Did they want to play?"+ wanttoplay);  
-                        if(wanttoplay){
-                            alert("Let's play then!")
+                        console.log("Visitors name:" + username);
+                    var wantToPlay = confirm("welcome to my site " + username+ "\n\n Do you want to play my guessing game?")    
+                        console.log("Wanted to play?"+ wantToPlay );  
+                        if(wantToPlay){
+                            alert("Let's get started then!");
+                            var question1 = confirm("I am older than 50?")
+                            console.log("Older than 50?" + question1)
                         } else {
-                            alert("Awww, sorry to hear that, come back another time")   
+                            alert("Awww, sorry to hear that, come back another time");   
                         }
+                        console.log("After if else")
+                            var question2 = confirm
+                        
+                    
 
                         
                       

@@ -11,31 +11,48 @@
         console.log("Wanted to play?" + wantToPlay);
         if (wantToPlay) {
             alert("Let's get started then!");
+            
             var question1 = confirm("My favorite food is sushi??");
             console.log("Favorite food is sushi" + question1);
+            
             if (question1) {
                 alert("Yes I friggin love sushi");
             } else {
                 alert("Nope your wrong");
             }
+
             var question2 = confirm("Was I born and raised in Oregon?");
             console.log("Born in oregon" + question2)
+
             if (question2) {
                 alert("Yes thats right! How did you know?!?!");
             } else {
                 alert("Nope, thats wrong");
             }
+
             var question3 = confirm("Do I like dogs?");
             console.log("Do I like dogs"+ question3);
+            
             if (question3) {
-                alert("Yes, I like dogs")
+                alert("Yes, I like dogs");
             } else {
                 alert("That is incorrect, who doesn't like dogs");
             }
-            var question4 = prompt("Guess how old I am?")
 
+            var question4 = prompt("Guess how old I am?");
+            question4 = Number(question4);
+            console.log("My age"+ question4);
+            var age = 27;
 
-
+            if (age === question4) {
+                alert("Yes you got it, how did you know");
+            }  else if (age>question4) {
+                alert("Too low");
+            }  else if (age<question4) {
+                alert("Too high");
+            }
+            
+            
 
 
 

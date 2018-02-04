@@ -12,56 +12,84 @@
         if (wantToPlay) {
             alert("Let's get started then!");
 
-            var question1 = confirm("My favorite food is sushi??");
-            console.log("Favorite food is sushi" + question1);
+            // var question1 = confirm("My favorite food is sushi??");
+            // console.log("Favorite food is sushi" + question1);
 
-            if (question1) {
-                alert("Yes I friggin love sushi");
-            } else {
-                alert("Nope your wrong");
+            // if (question1) {
+            //     alert("Yes I friggin love sushi");
+            // } else {
+            //     alert("Nope your wrong");
+            // }
+
+            // var question2 = confirm("Was I born and raised in Oregon?");
+            // console.log("Born in oregon" + question2)
+
+            // if (question2) {
+            //     alert("Yes thats right! How did you know?!?!");
+            // } else {
+            //     alert("Nope, thats wrong");
+            // }
+
+            // var question3 = confirm("Do I like dogs?");
+            // console.log("Do I like dogs" + question3);
+
+            // if (question3) {
+            //     alert("Yes, I like dogs");
+            // } else {
+            //     alert("That is incorrect, who doesn't like dogs");
+            // }
+
+            // var question4 = prompt("Guess how old I am?");
+            // question4 = Number(question4);
+            // console.log("My age" + question4);
+            // var age = 27;
+
+            // if (age === question4) {
+            //     alert("Yes you got it, how did you know");
+            // } else if (age > question4) {
+            //     alert("Too low");
+            // } else if (age < question4) {
+            //     alert("Too high");
+            // } else {
+            //     alert("I'm not sure what you typed in. Try again");
+            // }
+            
+            var userGuess = prompt("Do I like dogs or cats better?");
+            console.log("Dogs or cats better: " + userGuess);
+      
+           
+          
+
+            if ("dogs"===userGuess.toLowerCase() || "dog"===userGuess.toLowerCase() ){
+                alert("Yes that is right, I prefer dogs");
+            } else if ("cats"===userGuess.toLowerCase()){
+                alert("No, I do not like cats unless we're talking about Lions");
+            } else             {
+                alert("I'm not sure what you typed in. Try again");
             }
 
-            var question2 = confirm("Was I born and raised in Oregon?");
-            console.log("Born in oregon" + question2)
 
-            if (question2) {
-                alert("Yes thats right! How did you know?!?!");
-            } else {
-                alert("Nope, thats wrong");
-            }
+               
+    
 
-            var question3 = confirm("Do I like dogs?");
-            console.log("Do I like dogs" + question3);
+            
+          
 
-            if (question3) {
-                alert("Yes, I like dogs");
-            } else {
-                alert("That is incorrect, who doesn't like dogs");
-            }
 
-            var question4 = prompt("Guess how old I am?");
-            question4 = Number(question4);
-            console.log("My age" + question4);
-            var age = 27;
 
-            if (age === question4) {
-                alert("Yes you got it, how did you know");
-            } else if (age > question4) {
-                alert("Too low");
-            } else if (age < question4) {
-                alert("Too high");
-            }
+            // var result;
+            // var dOrC = preference();
 
-            function preference(){
-                var question5 = prompt("Do I like dogs or cats better?");
-            console.log("Dogs or cats better" + question5);
-            return question5.toLowerCase();
+            // switch (dOrC){
+            //     case "CAT":
+            //      break;
+            //     case "DOG"
+            //      break;
+            //     default:
+            //       result = "That is not an option";
 
-            }
-            var result;
-            var question5 = preference();
-
-            switch
+            // }
+            
 
 
 

@@ -40,33 +40,47 @@ if (wantToPlay) {
         // alert("That is incorrect, who doesn't like dogs");
     }
     document.getElementById("dogs").innerHTML = likeDogs
-    
-    var question4 = prompt("Guess how old I am?");
-    question4 = Number(question4);
-    console.log("My age" + question4);
+
+    var myAge = prompt("Guess how old I am?");
+    myAge = Number(myAge);
+    console.log("My age" + myAge);
     var age = 27;
 
-    if (age === question4) {
-        // alert("Yes you got it, how did you know");
+    if (age === myAge) {
+        document.getElementById("my-age").innerHTML = "Yes you got it, how did you know";
         counter++;
-    } else if (age > question4) {
-        // alert("Too low");
-    } else if (age < question4) {
-        // alert("Too high");
+    } else if (age > myAge) {
+         document.getElementById("my-age").innerHTML ="Too low";
+    } else if (age < myAge) {
+         document.getElementById("my-age").innerHTML = "Too high";
     } else {
-        // alert("I'm not sure what you typed in. Try again");
+         document.getElementById("my-age").innerHTML = "I'm not sure what you typed in. Try again";
     }
+    // document.getElementById("my-age").innerHTML = myAge
 
-    var userGuess = prompt("Do I like dogs or cats better?");
-    console.log("Dogs or cats better: " + userGuess);
-    if ("dogs" === userGuess.toLowerCase() || "dog" === userGuess.toLowerCase()) {
-        // alert("Yes that is right, I prefer dogs");
-        counter++;
-    } else if ("cats" === userGuess.toLowerCase() || "cat" === userGuess.toLowerCase()) {
-        // alert("No, I do not like cats unless we're talking about Lions");
+    var backFlip = confirm("Can I do a backflip?");
+    console.log("Can I do a backflip?" + backFlip);
+    
+    if (backFlip) {
+     
+        Counter++;
     } else {
-        // alert("I'm not sure what you typed in. Try again");
+
     }
+    document.getElementById("back-flip").innerHTML = backFlip
+
+
+    // var userGuess = prompt("Do I like dogs or cats better?");
+    // console.log("Dogs or cats better: " + userGuess);
+    // if ("dogs" === userGuess.toLowerCase() || "dog" === userGuess.toLowerCase()) {
+    //     // alert("Yes that is right, I prefer dogs");
+    //     counter++;
+    // } else if ("cats" === userGuess.toLowerCase() || "cat" === userGuess.toLowerCase()) {
+    //     // alert("No, I do not like cats unless we're talking about Lions");
+    // } else {
+    //     // alert("I'm not sure what you typed in. Try again");
+    
+    
 
     alert("You got " + counter + " correct");
 

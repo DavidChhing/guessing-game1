@@ -21,7 +21,7 @@ if (wantToPlay) {
     console.log("Born in oregon" + bornOregon)
 
     if (bornOregon) {
-        document.getElememtById("born").innerHTML = "Yes I was born here";
+        document.getElementById("born").innerHTML = "Yes I was born here";
         counter++;
     } else {
         document.getElementById("born").innerHTML = "Wrong, I was born in Oregon";
@@ -43,32 +43,35 @@ if (wantToPlay) {
     var age = 27;
 
     if (age === myAge) {
-        document.getElementById("my-age").innerHTML = "Yes you got it, how did you know";
+        document.getElementById("my-age").innerHTML = "Yes you guessed " + myAge + " that is correct";
         counter++;
     } else if (age > myAge) {
-         document.getElementById("my-age").innerHTML ="Too low";
+         document.getElementById("my-age").innerHTML ="Nope " + myAge + "is too low";
     } else if (age < myAge) {
-         document.getElementById("my-age").innerHTML = "Too high";
+         document.getElementById("my-age").innerHTML = "Close, but your guess " + myAge + " is too high"
     } else {
-         document.getElementById("my-age").innerHTML = "I'm not sure what you typed in. Try again";
+         document.getElementById("my-age").innerHTML = "I'm not sure what you typed in.";
     }
-    // document.getElementById("my-age").innerHTML = myAge
 
-    var backFlip = confirm("Can I do a backflip?");
-    console.log("Can I do a backflip?" + backFlip);
+    var pho = confirm("Does my family own a chain of PHO restaurants?");
+    console.log("Does my family own a chain of PHO restaurants?" + pho);
     
-    if (backFlip) {
-     
-        Counter++;
+    if (pho) {
+        document.getElementById("pho-restaurant").innerHTML = "No my family doesn't own any Pho restaurants, but that would be awesome if they did";
     } else {
-
-    // }
-    document.getElementById("back-flip").innerHTML = backFlip
-
-    var movies = confirm("What is my favorite movie genre?")
-    console.log("What is my favorite movie genre?" + movies)
-    movies = ["Horror", "Action", "Comedy", "Romance", "Sci-fi"];
+        document.getElementById("pho-restaurant").innerHTML = "Yes you caught me, I wish my family owned a pho restaurant";
+        counter++;
+    }
     
+    var movies = prompt("What is my favorite movie genre? \n\n Horror, Action, Comedy, Romance, Sci-fi, Indies");
+    console.log("What is my favorite movie genre?" + movies)
+    var genre = ["Horror", "Action", "Comedy", "Romance", "Sci-fi", "Indies"];
+    var myMovieGenre = "horror";
+
+    if (myMovieGenre === movies){
+        document.getElementById("movies").innerHTML = "Yes horror is my favorite, nice guess";
+        counter++;
+    }
 
     // var userGuess = prompt("Do I like dogs or cats better?");
     // console.log("Dogs or cats better: " + userGuess);

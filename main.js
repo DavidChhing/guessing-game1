@@ -9,33 +9,39 @@ if (wantToPlay) {
     
     var favoriteFood = confirm("My favorite food is sushi??");
     console.log("Favorite food is sushi" + favoriteFood);
-
+    var answer;
+    
     if (favoriteFood) {
-        document.getElementById("sushi").innerHTML =  "Yes I love Sushi";   
+        answer = "Yes I love Sushi" ;   
         counter++;
     } else {
-        document.getElementById("sushi").innerHTML = "Nope that's wrong, I love sushi";
+        answer = "Nope that's wrong, I love sushi";
     }
-    
+
+    document.getElementById("sushi").innerHTML = answer; 
+
     var bornOregon = confirm("Was I born and raised in Oregon?");
     console.log("Born in oregon" + bornOregon)
 
     if (bornOregon) {
-        document.getElementById("born").innerHTML = "Yes I was born here";
+        answer = "Yes I was born here";
         counter++;
     } else {
-        document.getElementById("born").innerHTML = "Wrong, I was born in Oregon";
+        answer = "Wrong, I was born in Oregon";
     }
     
+    document.getElementById("born").innerHTML = answer;
+
     var likeDogs = confirm("Do I like dogs?");
     console.log("Do I like dogs" + likeDogs);
 
     if (likeDogs) {
-        document.getElementById("dogs").innerHTML = "Yes I love dogs";
+        answer = "Yes I love dogs";
         counter++;
     } else {
-        document.getElementById("dogs").innerHTML = "That is incorrect, dogs are my favorite";
+        answer = "That is incorrect, dogs are my favorite";
     }
+    document.getElementById("dogs").innerHTML = answer;
 
     var myAge = prompt("Guess how old I am?");
     myAge = Number(myAge);
@@ -43,35 +49,40 @@ if (wantToPlay) {
     var age = 27;
 
     if (age === myAge) {
-        document.getElementById("my-age").innerHTML = "Yes you guessed " + myAge + " that is correct";
+        answer = "Yes you guessed " + myAge + " that is correct";
         counter++;
     } else if (age > myAge) {
-         document.getElementById("my-age").innerHTML ="Nope " + myAge + "is too low";
+        answer = "Nope " + myAge + "is too low";
     } else if (age < myAge) {
-         document.getElementById("my-age").innerHTML = "Close, but your guess " + myAge + " is too high"
+        answer =  "Close, but your guess " + myAge + " is too high"
     } else {
-         document.getElementById("my-age").innerHTML = "I'm not sure what you typed in.";
+          "I'm not sure what you typed in.";
     }
+    document.getElementById("my-age").innerHTML = answer;
 
     var pho = confirm("Does my family own a chain of PHO restaurants?");
     console.log("Does my family own a chain of PHO restaurants?" + pho);
     
     if (pho) {
-        document.getElementById("pho-restaurant").innerHTML = "No my family doesn't own any Pho restaurants, but that would be awesome if they did";
+        answer = "No my family doesn't own any Pho restaurants, but that would be awesome if they did";
     } else {
-        document.getElementById("pho-restaurant").innerHTML = "Yes you caught me, I wish my family owned a pho restaurant";
+        answer = "Yes you caught me, I wish my family owned a pho restaurant";
         counter++;
     }
-    
+    document.getElementById("pho-restaurant").innerHTML = answer;
+
     var movies = prompt("What is my favorite movie genre? \n\n Horror, Action, Comedy, Romance, Sci-fi, Indies");
     console.log("What is my favorite movie genre?" + movies)
-    var genre = ["Horror", "Action", "Comedy", "Romance", "Sci-fi", "Indies"];
+    var genre = ['Action', 'Comedy', 'Romance', 'Sci-fi', 'Indies'];
     var myMovieGenre = "horror";
 
     if (myMovieGenre === movies){
-        document.getElementById("movies").innerHTML = "Yes horror is my favorite, nice guess";
+        answer ="Yes horror is my favorite, nice guess.";
         counter++;
+    } else {
+        answer = "No, I like that genre but Horror is my favorite.";
     }
+    document.getElementById("movies").innerHTML = answer;
 
     // var userGuess = prompt("Do I like dogs or cats better?");
     // console.log("Dogs or cats better: " + userGuess);

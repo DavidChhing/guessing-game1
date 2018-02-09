@@ -5,41 +5,37 @@ var wantToPlay = confirm("welcome to my site " + username + "\n\n Do you want to
 console.log("Wanted to play?" + wantToPlay);
 if (wantToPlay) {
     alert("Let's get started then!");
-    
     var counter = 0;
-
+    
     var favoriteFood = confirm("My favorite food is sushi??");
     console.log("Favorite food is sushi" + favoriteFood);
 
     if (favoriteFood) {
-        // alert("Yes I friggin love sushi");
+        document.getElementById("sushi").innerHTML =  "Yes I love Sushi";   
         counter++;
     } else {
-        // alert("Nope your wrong");  
+        document.getElementById("sushi").innerHTML = "Nope that's wrong, I love sushi";
     }
-    document.getElementById("sushi").innerHTML = favoriteFood;
-   
+    
     var bornOregon = confirm("Was I born and raised in Oregon?");
     console.log("Born in oregon" + bornOregon)
 
     if (bornOregon) {
-        // alert("Yes thats right! How did you know?!?!");
+        document.getElememtById("born").innerHTML = "Yes I was born here";
         counter++;
     } else {
-        // alert("Nope, thats wrong");
+        document.getElementById("born").innerHTML = "Wrong, I was born in Oregon";
     }
-    document.getElementById("born").innerHTML = bornOregon
     
     var likeDogs = confirm("Do I like dogs?");
     console.log("Do I like dogs" + likeDogs);
 
     if (likeDogs) {
-        // alert("Yes, I like dogs");
+        document.getElementById("dogs").innerHTML = "Yes I love dogs";
         counter++;
     } else {
-        // alert("That is incorrect, who doesn't like dogs");
+        document.getElementById("dogs").innerHTML = "That is incorrect, dogs are my favorite";
     }
-    document.getElementById("dogs").innerHTML = likeDogs
 
     var myAge = prompt("Guess how old I am?");
     myAge = Number(myAge);
@@ -66,9 +62,13 @@ if (wantToPlay) {
         Counter++;
     } else {
 
-    }
+    // }
     document.getElementById("back-flip").innerHTML = backFlip
 
+    var movies = confirm("What is my favorite movie genre?")
+    console.log("What is my favorite movie genre?" + movies)
+    movies = ["Horror", "Action", "Comedy", "Romance", "Sci-fi"];
+    
 
     // var userGuess = prompt("Do I like dogs or cats better?");
     // console.log("Dogs or cats better: " + userGuess);

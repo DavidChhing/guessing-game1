@@ -1,45 +1,61 @@
 h1 {
-    color: rgb(23, 24, 124);
-    font-family: comic sans-serif;
-    text-align: center;
-  }
-  h2 {
-    color: rgb(23, 24, 124)
-    font-family: comic sans-serif;
-    text-align: center;
-  }
-  h3 {
-    color: teal;
-    font-family: comic sans-serif;
-    text-align: left;
-  }    
-  h4 {
-    color:black;
-    font-family:comic sans-serif; 
-    text-align: left;
-    font-weight: bold;
-    font-size: large;
-  }
-  p {
-    font-family: Arial;
-  }
-  
-  .highlight {
-    background-color: yellow;
-  }
-  
-  ol {
-    text-decoration: none;
-    font-family: arial;
-    color: rgb(14, 13, 14);
-    font-weight: bold;
-  }
-  body {
-    background-color:rgb(204, 255, 255)
-  } 
-  td {
-    text-align: left;
-  }
-  th {
-    text-align: left;
-  }
+  color: rgb(23, 24, 124);
+  font-family: comic sans-serif;
+  text-align: center;
+}
+h2 {
+  color: rgb(23, 24, 124);
+  font-family: comic sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+h3 {
+  color: rgb(22, 14, 36);
+  font-family: comic sans-serif;
+  text-align: left;
+  font-size: 30px;
+}    
+h4 {
+  color: rgb(23, 24, 124);
+  font-family:comic sans-serif; 
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+p {
+  font-family: Arial;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+ol {
+  text-decoration: none;
+  font-family: arial;
+  color: rgb(14, 13, 14);
+  font-weight: bold;
+}
+body {
+  background-color:rgba(130, 175, 202, 0.495)
+} 
+td, th {
+  text-align: left;
+}
+div {
+  height: 60px;
+  border: 15px solid rgb(40, 149, 192);
+}  
+table {
+  border-collapse: collapse;
+}
+table, th, td{
+  border: 2px solid black;
+  padding: 4px; 
+}
+.correctBox{
+  color: green;
+}
+.incorrectBox{
+  color: red;
+}

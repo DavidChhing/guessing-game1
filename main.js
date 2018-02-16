@@ -14,10 +14,10 @@ if (wantToPlay) {
         var answer;
 
         if (favoriteFood) {
-            answer = "<span class='correctBox'>Yes I love Sushi <img src='pictures/greenmark.jpeg' width='25' height='25'></span>";
+            answer = "<span class='correctBox'>Yes I love Sushi <img src='Pictures/greenmark.jpeg' width='25' height='25'></span>";
             counter++;
         } else {
-            answer = "<span class='incorrectBox'>Nope that's wrong, I love sushi <img src='pictures/redmark.png' width='25' height='25'></span>";
+            answer = "<span class='incorrectBox'>Nope that's wrong, I love sushi <img src='Pictures/redmark.png' width='25' height='25'></span>";
         }
         document.getElementById("sushi").innerHTML = answer;
     }
@@ -28,10 +28,10 @@ if (wantToPlay) {
         console.log("Born in oregon" + bornOregon)
 
         if (bornOregon) {
-            answer = "<span class='correctBox'>Yes I was born here <img src='pictures/greenmark.jpeg' width='25' height='25'>";
+            answer = "<span class='correctBox'>Yes I was born here <img src='Pictures/greenmark.jpeg' width='25' height='25'>";
             counter++;
         } else {
-            answer = "<span class= 'incorrectBox'>Wrong, I was born in Oregon <img src='pictures/redmark.png' width='25' height='25'>";
+            answer = "<span class= 'incorrectBox'>Wrong, I was born in Oregon <img src='Pictures/redmark.png' width='25' height='25'>";
         }
         document.getElementById("born").innerHTML = answer;
     }
@@ -42,10 +42,10 @@ if (wantToPlay) {
         console.log("Do I like dogs" + likeDogs);
 
         if (likeDogs) {
-            answer = "<span class='correctBox'>Yes I love dogs <img src='pictures/greenmark.jpeg' width='25' height='25'>";
+            answer = "<span class='correctBox'>Yes I love dogs <img src='Pictures/greenmark.jpeg' width='25' height='25'>";
             counter++;
         } else {
-            answer = "<span class= 'incorrectBox'>That is incorrect, dogs are my favorite <img src='pictures/redmark.png' width='25' height='25'>";
+            answer = "<span class= 'incorrectBox'>That is incorrect, dogs are my favorite <img src='Pictures/redmark.png' width='25' height='25'>";
         }
         document.getElementById("dogs").innerHTML = answer;
     }
@@ -58,10 +58,10 @@ if (wantToPlay) {
         var age = 27;
 
         if (age === myAge) {
-            answer = "<span class='correctBox'>Yes you guessed " + myAge + " that is correct <img src='pictures/greenmark.jpeg' width='25' height='25'>";
+            answer = "<span class='correctBox'>Yes you guessed " + myAge + " that is correct <img src='Pictures/greenmark.jpeg' width='25' height='25'>";
             counter++;
         } else if (age > myAge) {
-            answer = "<span class= 'incorrectBox'>Nope " + myAge + "<span class= 'incorrectBox'> is too low <img src='pictures/redmark.png' width='25' height='25'>";
+            answer = "<span class= 'incorrectBox'>Nope " + myAge + "<span class= 'incorrectBox'> is too low <img src='Pictures/redmark.png' width='25' height='25'>";
         } else if (age < myAge) {
             answer = "<span class= 'incorrectBox'>Close, but your guess " + myAge + " is too high"
         } else {
@@ -76,9 +76,9 @@ if (wantToPlay) {
         console.log("Does my family own a chain of PHO restaurants?" + pho);
 
         if (pho) {
-            answer = "<span class= 'incorrectBox'>No my family doesn't own any Pho restaurants, but that would be awesome if they did <img src='pictures/redmark.png' width='25' height='25'>";
+            answer = "<span class= 'incorrectBox'>No my family doesn't own any Pho restaurants, but that would be awesome if they did <img src='Pictures/redmark.png' width='25' height='25'>";
         } else {
-            answer = "<span class='correctBox'>Yes you caught me, I wish my family owned a pho restaurant <img src='pictures/greenmark.jpeg' width='25' height='25'>";
+            answer = "<span class='correctBox'>Yes you caught me, I wish my family owned a pho restaurant <img src='Pictures/greenmark.jpeg' width='25' height='25'>";
             counter++;
         }
         document.getElementById("pho-restaurant").innerHTML = answer;
@@ -96,11 +96,11 @@ if (wantToPlay) {
             console.log(movieGuess === correctMovieGenres[i])
             if (movieGuess.toUpperCase() === correctMovieGenres[i].toUpperCase()) {
                 console.log(correctMovieGenres[i])
-                answer = "<span class='correctBox'>Yes I do like that genre <img src='pictures/greenmark.jpeg' width='25' height='25'>";
+                answer = "<span class='correctBox'>Yes I do like that genre <img src='Pictures/greenmark.jpeg' width='25' height='25'>";
                 counter++;
                 break;
             } else {
-                answer = "<span class= 'incorrectBox'>No, I don't like that genre <img src='pictures/redmark.png' width='25' height='25'>";
+                answer = "<span class= 'incorrectBox'>No, I don't like that genre <img src='Pictures/redmark.png' width='25' height='25'>";
             }
         }
         document.getElementById("movies").innerHTML = answer;
